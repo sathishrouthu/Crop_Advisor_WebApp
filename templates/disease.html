@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Crop Advisor</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="top">
+            <div class="navbar">
+                <a href="#" class="logo">Crop-Advisor</a>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./crop.html">Crop-Recommnedation</a></li>
+                    <li><a href="./fert.html">Fertilizer-Recommnedation</a></li>
+                    <li><a href="./disease.html">Disease Detection</a></li>
+                    <li><a href="./about">About us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="title"><h1>Paddy field Disease Detection</h1></div>
+        
+        <div class="content">
+            <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+            <div class="file-upload">
+              <h3 >Please Upload Image of a Rice plant : </h3>
+              <div class="image-upload-wrap">
+                <input id = "input_image" class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                <div class="drag-text">
+                  <h3>Drag and drop a file or select an Image here</h3>
+                </div>
+              </div>
+              <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+                <div class="image-title-wrap">
+                  <button type="button" onclick="onClickPredictDisease()" class="predict-image"> Predict </button>
+                </div>
+              </div>
+            </div>
+            <div id="resultcard" class="result">
+                <div class="result_desc">
+                    <h1 id = "uiPredictedDisease">Disease Identified : Blast</h1>
+                    <br>
+                    <p>
+                    <strong>Suggested Solution : </strong><br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, maiores 
+                    ullam eaque praesentium excepturi harum error deserunt ab non placeat! Fuga 
+                    molestiae,labore accusantium voluptatibus non enim architecto asperiores distinctio.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, maiores 
+                    ullam eaque praesentium excepturi harum error deserunt ab non placeat! Fuga 
+                    molestiae,labore accusantium voluptatibus non enim architecto asperiores distinctio.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, maiores 
+                    ullam eaque praesentium excepturi harum error deserunt ab non placeat! Fuga 
+                    molestiae,labore accusantium voluptatibus non enim architecto asperiores distinctio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

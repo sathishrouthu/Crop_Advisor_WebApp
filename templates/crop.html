@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Crop Advisor</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="top">
+            <div class="navbar">
+                <a href="#" class="logo">Crop-Advisor</a>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./crop.html">Crop-Recommnedation</a></li>
+                    <li><a href="./fert.html">Fertilizer-Recommnedation</a></li>
+                    <li><a href="./disease.html">Disease Detection</a></li>
+                    <li><a href="./about">About us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="title"><h1>Crop Recommendation</h1></div>
+        
+        <div class="content">
+                
+                <div id = "formcard" class="form-card">
+                <h2 class="form-title"> Fill the values : </h2>
+                <form class = "form" method="post">
+                    <div class="form-group">
+                        <input  type="text" id="uiN" class="form-control" name="Nitrogen" placeholder="Nitrogen">
+                        <label for="Nitrogen" class="form-label" >Nitrogen</label>
+                    </div>
+                    <div class="form-group">
+                        <input  type="text" id="uiK" class="form-control" name="Potassium" placeholder="a" >
+                        <label for="Potassium" class="form-label" >Potassium</label>
+                    </div>
+                    <div class="form-group">
+                        <input  type="text" id="uiP" class="form-control" name="Phosporous" placeholder="a" >
+                        <label for="Phosporus" class="form-label" >Phosporus</label>
+                    </div>
+                    <div class="form-group">
+                        <input  type="text" id="uiTemperature"  name="Temperature" class="form-control" placeholder="a" >
+                        <label for="Temperature" class="form-label" >Temperature</label>
+                    </div>
+                    <div class="form-group">
+                        <input  type="text"  id="uiHumidity" name="Humidity"  class="form-control" placeholder="a" >
+                        <label for="Humidity" class="form-label" >Humidity</label>
+                    </div>
+                    <div class="form-group">
+                        <input  type="text" id="uipH"  name="pH" class="form-control" placeholder="a">
+                        <label for="pH" class="form-label" >pH Value</label>
+                    </div>
+                    <div class="form-group">
+                        <input  type="text" id="uiRainfall"  name="RainFall"  class="form-control" placeholder="a" >
+                        <label for="RainFall" class="form-label" >RainFall</label>
+                    </div>
+                </form>
+                <button onclick="onClickedPredictCrop()" class=".button">Predict</button>
+                </div>
+                <div id="resultcard" class="result">
+                    <h1 id = "uiPredictedCrop">Recommended Crop : Apple</h1>
+                    <div  class="result_image">
+                        <img id="uiCropImage" src="./Images/crop/apple.jpg" alt="Result_Image.jpg">
+                    </div>
+                    <div class="result_desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, maiores 
+                        ullam eaque praesentium excepturi harum error deserunt ab non placeat! Fuga 
+                        molestiae,labore accusantium voluptatibus non enim architecto asperiores distinctio.
+                    </div>
+                </div>
+        </div>        
+    </body>
+</html>
