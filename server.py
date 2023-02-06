@@ -8,6 +8,10 @@ import os
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER']="./"
 
+@app.route('/')
+def home():
+    return render_template("index.html")
+
 @app.route('/predict_crop',methods=["POST"])
 def predict_crop():
     input_values = list(request.form.to_dict().values())
@@ -50,7 +54,6 @@ def predict_disease():
         return response
     else:
         return "GET"
-
 
 if __name__=="__main__":
     util.load_saved_artifacts()
